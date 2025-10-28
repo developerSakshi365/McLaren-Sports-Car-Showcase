@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Image Slider</title>
+
+    <link rel="stylesheet" href="./css/supercars.css" />
+    
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+<body>
+    
+    <header>
+    <span class="year">Legacy of Speed</span>
+    <a href="/" class="logo"><img src="/images/logo.png" alt="logo" /></a>
+    <a href="#" class="menu" onclick="toggleMenu();"></a>
+    </header>
+    
+    <div class="">
+        <ul class="nav">
+            <li><a href="supercars.html">Supercars</a></li>
+            <li><a href="acoustic.html">Acoustics</a></li>
+            <li><a href="cariq.html">CarIQ</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">contact</a></li>        </ul>
+        </div>
+        
+
+
+    <div class="carousel">
+
+        <div class="list">
+
+            <div class="item" style="background-image: url(./images/cars/mclaren-1.jpg);">
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">Solus GT </div>
+                    <div class="des">A single-seater, track-only hypercar powered by a 5.2L V10 with 829 hp, inspired by video games.
+                        .</div>
+                    </div>
+            </div>
+
+            <div class="item" style="background-image: url(./images/cars/mclaren-2.jpg);">
+                
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">650S </div>
+                    <div class="des">A 3.8L twin-turbo V8 (641 hp) supercar, evolved from the MP4-12C, available in coupe and spider versions.</div>
+
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(./images/cars/mclaren-3.jpg);">
+
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">600LT </div>
+                    <div class="des"> lighter, track-focused variant of the 570S, with 592 hp and enhanced aerodynamics.</div>
+                    
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(./images/cars/mclaren-4.jpg);">
+                
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">Artura </div>
+                    <div class="des">McLaren’s first series-production hybrid supercar, featuring a 3.0L twin-turbo V6 + electric motor (671 hp), designed for performance and efficiency.
+                    </div>
+                                    </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(./images/cars/mclaren-5.jpg);">
+                
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">GT </div>
+                    <div class="des"> luxurious grand tourer offering 612 hp, a comfortable ride, and McLaren performance for long-distance travel.</div>
+                                    </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(./images/cars/mclaren-6.jpg);">
+                
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">Elva </div>
+                    <div class="des">A unique open-top roadster with 804 hp, designed for a pure wind-in-the-face driving experience. Limited to 149 units.</div>
+                                    </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(./images/cars/mclaren-7.jpg);">
+                
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">Urus S</div>
+                    <div class="des">Lamborghini Urus S, a high-performance luxury SUV that blends supercar DNA with everyday practicality.
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(./images/cars/maserati-8.jpg);">
+                
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">MC20</div>
+                    <div class="des">The Maserati MC20 is a high-performance supercar marking Maserati’s return to the mid-engine sports car segment. It blends Italian design, advanced aerodynamics, and cutting-edge technology.
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(./images/cars/mclaren-9.jpg);">
+                
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">LT07 MCL</div>
+                    <div class="des">McLaren 765LT (LT for Long Tail, 07 possibly referring to its development code or an internal designation), it's a track-focused version of the McLaren 720S with more power, reduced weight, and better aerodynamics.
+
+                    </div>
+                                    </div>
+
+            </div>
+
+
+            <div class="item" style="background-image: url(./images/cars/mclaren-10.jpg);">
+                
+                <div class="content">
+                    <div class="title"></div>
+                    <div class="name">765LT</div>
+                    <div class="des">The McLaren 765LT is a high-performance, track-focused supercar based on the McLaren 720S. It belongs to McLaren’s "Long Tail" (LT) series, emphasizing lightweight design, increased power, and enhanced aerodynamics.
+
+                    </div>
+                                    </div>
+
+            </div>
+            
+
+        </div>
+
+        <!--next prev button-->
+        <div class="arrows">
+            <button class="prev"><</button>
+            <button class="next">></button>
+        </div>
+
+
+        <!-- time running -->
+        <div class="timeRunning"></div>
+
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2 class="logo"><img src="/images/logo.png" alt="logo" /></h2> 
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#models">Models</a>
+                <a href="#contact">Contact</a>
+                <a href="#news">News</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2025 McLaren Automotive. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/gallery.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="./css/style.css" />
+    <title>About Us - McLaren</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #000;
+        background-image: url('./images/cars/mclaren-2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    
+    /* Dark Overlay */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(12, 12, 12, 0.815); /* Adjust the opacity (0.7 for darker) */
+        z-index: -1;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 120px 0;
+        }
+
+h1 {
+    font-family: 'Orbitron', sans-serif;  /* Modern futuristic font */
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #e0e0e0;  /* Light silver/gray for a premium feel */
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3);
+}
+ .description {
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 350px;
+            text-align: center;
+        }
+        .feature:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 102, 0, 0.8);
+        }
+        .feature img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #ff3300;
+        }
+        h2 {
+            font-size: 2.5em;
+            color: #ff6600;
+            margin-top: 34px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="year">Legacy of Speed</span>
+        <a href="/" class="logo"><img src="/images/logo.png" alt="logo" /></a>
+        <a href="#" class="menu" onclick="toggleMenu();"></a>
+        </header>
+        
+        <div class="">
+            <ul class="nav">
+                <li><a href="supercars.html">Supercars</a></li>
+                <li><a href="acoustic.html">Acoustics</a></li>
+                <li><a href="cariq.html">CarIQ</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">contact</a></li>            </ul>
+            </div>
+        
+    <div class="container">
+        <h1>McLaren:The Future of Speed</h1>
+        <p class="description">McLaren represents the pinnacle of high-performance automotive engineering. Since 1963, McLaren has blended Formula 1 expertise with road car innovation, producing some of the world’s most exhilarating supercars. Every McLaren is crafted with cutting-edge aerodynamics, lightweight materials, and precision engineering, delivering an unmatched driving experience.</p>
+        
+        <h2>Features of McLaren Cars</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/2905/2905558.png" alt="Performance">
+                <h3>Extreme Performance</h3>
+                <p>McLaren cars deliver breathtaking acceleration with twin-turbocharged V8 and hybrid powertrains.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/1076/1076366.png" alt="Carbon Fiber">
+                <h3>Lightweight Carbon Fiber</h3>
+                <p>Constructed with a monocoque chassis for superior agility and durability.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/3774/3774292.png" alt="Aerodynamics">
+                <h3>Aerodynamic Mastery</h3>
+                <p>Advanced airflow technology ensures minimal drag and maximum speed.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/1037/1037466.png" alt="Hybrid Technology">
+                <h3>Hybrid Innovation</h3>
+                <p>McLaren Artura features a revolutionary hybrid powertrain for sustainability and speed.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/1048/1048475.png" alt="Braking System">
+                <h3>Precision Braking</h3>
+                <p>F1-inspired ceramic brakes ensure superior stopping power.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/1312/1312308.png" alt="Signature Exhaust">
+                <h3>Iconic Exhaust Sound</h3>
+                <p>Distinctive exhaust notes that define the McLaren driving experience.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/2332/2332310.png" alt="Driver-Centric Interior">
+                <h3>Driver-Centric Cockpit</h3>
+                <p>Every McLaren is designed for ultimate driver engagement and comfort.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/3937/3937029.png" alt="Advanced Technology">
+                <h3>Cutting-Edge Tech</h3>
+                <p>McLaren vehicles feature state-of-the-art digital displays and intelligent drive modes.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2 class="logo"><img src="/images/logo.png" alt="logo" /></h2> 
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#models">Models</a>
+                <a href="#contact">Contact</a>
+                <a href="#news">News</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2025 McLaren Automotive. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+<script src="./js/script.js"></script>
+</body>
+</html>

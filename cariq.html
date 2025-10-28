@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>McLaren Quiz</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('./images/cars/mclaren-5.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            height: 80%;
+            margin-top: 45px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 100px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 10px #ffcc00;
+        }
+        p{
+            font-size: 5em;
+        }
+        .question {
+            font-size: 2em;
+            margin: 13px;
+        }
+        .options button {
+            background: #13264b;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            padding: 23px;
+            cursor: pointer;
+            border-radius: 100px;
+            transition: 0.3s;
+            display: block;
+            width: 45%;
+            margin: 10px auto;
+        }
+        .options button:hover {
+            background: #170ad1;
+            color:white;
+        }
+        .result {
+            font-size: 2em;
+            margin-top: 5px;
+        }
+        img {
+            width: 150px;
+            /* border-radius: 89px; */
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="year">Legacy of Speed</span>
+        <a href="/" class="logo"><img src="/images/logo.png" alt="logo" /></a>
+        <a href="#" class="menu" onclick="toggleMenu();"></a>
+        </header>
+        
+        <div class="">
+            <ul class="nav">
+                <li><a href="supercars.html">Supercars</a></li>
+                <li><a href="acoustic.html">Acoustics</a></li>
+                <li><a href="drive.html">CarIQ</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">contact</a></li>            </ul>
+            
+        
+    <div class="container">
+        <h1><i class="fas fa-car"></i> "🏎️ Are You a True Car Enthusiast? Prove It!"</h1>
+        <p class="question" id="question-text"></p>
+        <img id="question-image" src="" alt="Car image">
+        <div class="options" id="options-container"></div>
+        <p class="result" id="result-text"></p>
+    </div>
+    </div>
+    <script>
+        const questions = [
+            {
+                question: "Guess the logo?",
+                image: "./images/cars/ferrarilogo.jpeg",
+                options: ["Ferrari", "McLaren", "Bugatti"],
+                answer: "Ferrari"
+            },
+            {
+                question: "What McLaren model is this?",
+                image: "./images/cars/mclaren-3.jpg",
+                options: ["720S", "765LT Spider", "P1"],
+                answer: "765LT Spider"
+            },
+            {
+                question: "Which country is Mclaren from?",
+                image: "./images/cars/country.jpeg",
+                options: ["Germany", "United kingdom", "France"],
+                answer: "United kingdom"
+            },
+            {
+                question: "Which McLaren model was developed with Formula 1 technology?",
+                image: "./images/cars/mclaren-9.jpg",
+                options: ["McLaren F1", "McLaren 600LT", "McLaren GT"],
+                answer: "McLaren F1"
+            },
+            {
+                question: "In which year McLaren was founded?",
+                image: "./images/cars/mclaren-7.jpg",
+                options: ["1963", "1981", "1995"],
+                answer: "1963"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            if (currentQuestion >= questions.length) {
+                document.querySelector(".container").innerHTML = `<h1>Quiz Completed!</h1><p>Your Score: ${score} / ${questions.length}</p>`;
+                return;
+            }
+            
+            const question = questions[currentQuestion];
+            document.getElementById("question-text").innerText = question.question;
+            document.getElementById("question-image").src = question.image;
+            
+            const optionsContainer = document.getElementById("options-container");
+            optionsContainer.innerHTML = "";
+            
+            question.options.forEach(option => {
+                const button = document.createElement("button");
+                button.innerText = option;
+                button.onclick = () => checkAnswer(option);
+                optionsContainer.appendChild(button);
+            });
+        }
+
+        function checkAnswer(selectedOption) {
+            const question = questions[currentQuestion];
+            
+            if (selectedOption === question.answer) {
+                score++;
+                document.getElementById("result-text").innerText = "✅ Correct!";
+            } else {
+                document.getElementById("result-text").innerText = "❌ Wrong! The correct answer is " + question.answer;
+            }
+            
+            currentQuestion++;
+            setTimeout(loadQuestion, 1500);
+        }
+
+        loadQuestion();
+    </script>
+    
+<script src="./js/script.js"></script>
+
+</body>
+</html>
