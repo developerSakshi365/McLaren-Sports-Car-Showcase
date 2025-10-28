@@ -26,7 +26,6 @@ Built using <strong>HTML, CSS, and JavaScript</strong>.
 - 🎧 **Engine Sound Player** — Listen to authentic McLaren car sounds  
 - ❓ **Fun McLaren Quiz** — Test your knowledge about McLaren supercars  
 - 📞 **Static Contact Page** — A simple, clean contact section  
-- 📱 **Responsive Design** — Works perfectly on desktop, tablet, and mobile  
 - 🧭 **Interactive Navigation** — Toggle menu built using JavaScript  
 
 ---
@@ -35,9 +34,9 @@ Built using <strong>HTML, CSS, and JavaScript</strong>.
 
 | Frontend | Tools / Libraries |
 |-----------|-------------------|
-| HTML5 | Bootstrap / Materialize (optional) |
-| CSS3 | Google Fonts, Flexbox/Grid |
-| JavaScript (ES6) | VS Code, Git, GitHub |
+| HTML5 | Google Fonts |
+| CSS3 | Flexbox/Grid |
+| JavaScript | VS Code, Git, GitHub |
 
 ---
 
@@ -48,7 +47,7 @@ Built using <strong>HTML, CSS, and JavaScript</strong>.
 git clone https://github.com/developerSakshi365/mclaren-showcase.git
 
 # Navigate to project folder
-cd mclaren-showcase
+cd Mclaren-Sports-Car-Showcase
 
 # Open the website in your browser
 start index.html
@@ -58,6 +57,7 @@ start index.html
 **Developer:** [@developerSakshi365](https://github.com/developerSakshi365)  
 **Project Type:** Static Web Showcase  
 **Built With ❤️ for McLaren Enthusiasts**
+
 
 
 
